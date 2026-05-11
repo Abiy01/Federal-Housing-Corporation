@@ -131,7 +131,7 @@ const PropertyForm = () => {
           className="mb-8"
         >
           <h1 className="text-3xl font-bold text-[#1C1B1A] mb-1">Add New Property</h1>
-          <p className="text-[#5A5856]">Fill in the details to list a new property on BuildEstate</p>
+          <p className="text-[#5A5856]">Fill in the details to list a new property on FHC</p>
         </motion.div>
 
         <motion.form
@@ -148,7 +148,7 @@ const PropertyForm = () => {
               <div>
                 <label htmlFor="title" className={labelClass}>Property Title</label>
                 <input type="text" id="title" name="title" required value={formData.title}
-                  onChange={handleInputChange} placeholder="e.g. Modern 3BHK Apartment in Bandra"
+                  onChange={handleInputChange} placeholder="e.g. Modern 3BHK Apartment in 4 Killo"
                   className={inputClass} />
               </div>
 
@@ -204,7 +204,7 @@ const PropertyForm = () => {
                   <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#9CA3AF]" />
                   <input type="text" id="location" name="location" required
                     value={formData.location} onChange={handleInputChange}
-                    placeholder="e.g. Bandra West, Mumbai" className={cn(inputClass, 'pl-10')} />
+                    placeholder="e.g. 4 killo, Addis Ababa" className={cn(inputClass, 'pl-10')} />
                 </div>
               </div>
               <div>
