@@ -1,10 +1,10 @@
-# BuildEstate
+# Federal Housing Corporation (FHC)
 
-Full-stack real estate platform developed as a final-year graduation project.
+Full-stack digital housing platform for Ethiopia (Federal Housing Corporation), developed as a final-year graduation project.
 
 ## Project Overview
 
-BuildEstate consists of three applications:
+The FHC monorepo consists of three applications:
 
 - `frontend` - user-facing web app
 - `admin` - admin dashboard

@@ -1,10 +1,12 @@
-# BuildEstate - Architecture Issues Document
+# FHC — Architecture Issues Document
 
-> **Project:** Real Estate Website (BuildEstate)
+> **Project:** Federal Housing Corporation (FHC) digital platform
 > **GitHub:** [github.com/AAYUSH412/Real-Estate-Website](https://github.com/AAYUSH412/Real-Estate-Website)
 > **Type:** Open-source project
 > **Structure:** Monorepo with 3 apps - `admin/`, `backend/`, `frontend/`
 > **Generated:** March 2026
+
+> **Documentation note:** Some later sections reference **INR**, **Mumbai**, or Indian benchmark tables as **illustrative** examples from an earlier design template. The **live FHC product** targets **Ethiopia**, **Addis Ababa**, and **ETB**; treat those tables as generic architecture discussion unless you replace them with ETB-specific benchmarks.
 
 ---
 
@@ -12,7 +14,7 @@
 
 | App | URL |
 |-----|-----|
-| **Frontend** | https://buildestate.vercel.app |
+| **Frontend** | https://federal-housing-corporation.vercel.app |
 | **Backend** | https://real-estate-website-backend-zfu7.onrender.com |
 | **Admin** | https://real-estate-website-admin-sage.vercel.app/dashboard |
 
@@ -425,9 +427,9 @@ Inconsistent naming makes configuration confusing and error-prone.
 
 | Purpose | Admin | Frontend |
 |---------|-------|----------|
-| Auth Token | `token` | `buildestate_token` |
+| Auth Token | `token` | `buildestate_token` (legacy key name in frontend code) |
 | Admin Flag | `isAdmin` | N/A |
-| User Data | N/A | `buildestate_user` |
+| User Data | N/A | `buildestate_user` (legacy key name in frontend code) |
 
 **Files:**
 - `admin/src/config/constants.js:15-16`
@@ -530,7 +532,7 @@ const API_BASE_URL = import.meta.env.VITE_API_BASE_URL
 | Attribute | Details |
 |-----------|---------|
 | **Location** | `backend/services/firecrawlService.js` |
-| **Purpose** | Scrapes property listings from multiple Indian real estate portals |
+| **Purpose** | Optional / historical: multi-portal listing aggregation (examples may reference non-Ethiopian sources); FHC production emphasizes verified and user-submitted listings priced in **ETB** |
 | **Strengths** | Multi-source search, deduplication, retry logic, circuit breaker |
 
 **Architecture Strengths:**
@@ -1300,7 +1302,7 @@ export const searchProperties = async (req, res) => {
 - ✅ Error stack traces in structured format
 - ✅ Request ID correlation via `X-Request-ID` header
 - ✅ Child loggers with request context
-- ✅ Service metadata (`buildestate-api`)
+- ✅ Service metadata (`buildestate-api` in `backend/utils/logger.js`; legacy Winston service tag — consider renaming to `fhc-api` in code later)
 
 **Dependencies Added:**
 ```json
@@ -1538,9 +1540,9 @@ PORT=4000
 MONGO_URI=mongodb+srv://...
 JWT_SECRET=your-secret-key
 BREVO_API_KEY=your-brevo-key
-FRONTEND_URL=https://buildestate.vercel.app
+FRONTEND_URL=https://federal-housing-corporation.vercel.app
 ADMIN_URL=https://real-estate-website-admin-sage.vercel.app
-WEBSITE_URL=https://buildestate.vercel.app
+WEBSITE_URL=https://federal-housing-corporation.vercel.app
 ```
 
 ### Frontend (Vercel)

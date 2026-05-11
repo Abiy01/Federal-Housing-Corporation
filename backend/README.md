@@ -1,6 +1,6 @@
-# Backend (BuildEstate)
+# Backend (FHC)
 
-Express API for BuildEstate.
+Express API for the **Federal Housing Corporation (FHC)** platform.
 
 ## Run
 

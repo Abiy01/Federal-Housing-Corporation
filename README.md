@@ -1,6 +1,6 @@
-# BuildEstate
+# Federal Housing Corporation (FHC)
 
-BuildEstate is a full-stack real estate platform with three apps:
+This monorepo powers the **Federal Housing Corporation (FHC)** digital platform: verified property listings, citizen-facing housing services, admin operations, and a shared API. It is organized as three apps:
 
 - `frontend`: user-facing website
 - `admin`: admin dashboard
@@ -17,7 +17,7 @@ BuildEstate is a full-stack real estate platform with three apps:
 ## Project Structure
 
 ```text
-Real-Estate-Website/
+Federal-Housing-Corporation/
 ├── frontend/
 ├── admin/
 ├── backend/

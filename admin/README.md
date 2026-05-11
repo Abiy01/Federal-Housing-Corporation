@@ -1,8 +1,8 @@
 <div align="center">
 
-# BuildEstate — Admin Panel 📊
+# FHC — Admin Panel
 
-_Comprehensive administrative dashboard for overseeing the BuildEstate real estate ecosystem._
+_Comprehensive administrative dashboard for the **Federal Housing Corporation (FHC)** digital housing platform._
 
 [![React](https://img.shields.io/badge/React-18.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev)
 [![Vite](https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)

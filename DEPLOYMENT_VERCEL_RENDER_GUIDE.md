@@ -1,6 +1,6 @@
-# BuildEstate Deployment Guide (Vercel + Render)
+# FHC Deployment Guide (Vercel + Render)
 
-This guide deploys:
+This guide deploys the **Federal Housing Corporation (FHC)** monorepo:
 
 - `frontend` to Vercel
 - `backend` to Render

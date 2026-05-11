@@ -1,6 +1,6 @@
-# BuildEstate Setup Instructions
+# FHC Setup Instructions
 
-This guide explains how to set up and run BuildEstate locally in a reliable way.
+This guide explains how to set up and run the **Federal Housing Corporation (FHC)** monorepo locally in a reliable way.
 
 It covers:
 
@@ -47,13 +47,13 @@ npm -v
 
 ```powershell
 git clone <your-repo-url>
-cd Real-Estate-Website
+cd Federal-Housing-Corporation
 ```
 
 If you already have the code, just open the project root:
 
 ```powershell
-cd "C:\Users\HP\OneDrive\Desktop\Real-Estate-Website"
+cd "C:\Users\HP\OneDrive\Desktop\Federal-Housing-Corporation"
 ```
 
 ---
@@ -71,7 +71,7 @@ PORT=4000
 NODE_ENV=development
 BACKEND_URL=http://localhost:4000
 
-MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/buildestate?retryWrites=true&w=majority
+MONGO_URI=mongodb+srv://<username>:<password>@<cluster>.mongodb.net/fhc?retryWrites=true&w=majority
 JWT_SECRET=replace_with_a_long_random_secret
 
 SMTP_USER=your_smtp_user
@@ -80,7 +80,7 @@ EMAIL=your_sender_email@domain.com
 EMAIL_USER=your_sender_email@domain.com
 BREVO_API_KEY=your_brevo_api_key
 
-ADMIN_EMAIL=admin@buildestate.com
+ADMIN_EMAIL=admin@yourdomain.com
 ADMIN_PASSWORD=replace_with_secure_password
 
 WEBSITE_URL=http://localhost:5173
@@ -151,7 +151,7 @@ Open 3 terminals.
 ### Terminal 1: Backend
 
 ```powershell
-cd "C:\Users\HP\OneDrive\Desktop\Real-Estate-Website\backend"
+cd "C:\Users\HP\OneDrive\Desktop\Federal-Housing-Corporation\backend"
 npm run dev
 ```
 
@@ -163,7 +163,7 @@ Expected:
 ### Terminal 2: Frontend
 
 ```powershell
-cd "C:\Users\HP\OneDrive\Desktop\Real-Estate-Website\frontend"
+cd "C:\Users\HP\OneDrive\Desktop\Federal-Housing-Corporation\frontend"
 npm run dev
 ```
 
@@ -174,7 +174,7 @@ Expected:
 ### Terminal 3: Admin
 
 ```powershell
-cd "C:\Users\HP\OneDrive\Desktop\Real-Estate-Website\admin"
+cd "C:\Users\HP\OneDrive\Desktop\Federal-Housing-Corporation\admin"
 npm run dev
 ```
 

@@ -1,12 +1,12 @@
-# BuildEstate / Real-Estate-Website — Project Description for LLMs
+# Federal Housing Corporation (FHC) — Project Description for LLMs
 
-This document describes the **BuildEstate** real estate platform as implemented in this repository: product intent, **design language**, **monorepo layout**, **tech stack**, **backend architecture**, **APIs**, **data models**, **auth**, **integrations**, and **operational conventions**. It is written so another model can onboard without reading every file first.
+This document describes the **Federal Housing Corporation (FHC)** digital housing platform as implemented in this repository: product intent, **design language**, **monorepo layout**, **tech stack**, **backend architecture**, **APIs**, **data models**, **auth**, **integrations**, and **operational conventions**. It is written so another model can onboard without reading every file first.
 
 ---
 
 ## 1. Product summary
 
-**BuildEstate** is a full-stack real estate web application:
+**FHC** (Federal Housing Corporation, Ethiopia) is implemented as a full-stack web application:
 
 - **Public marketing site + property discovery** (`frontend/`): home, property catalog, property detail, about, contact, user sign-in/up, password reset, email verification, **user-submitted listings** (“add property”), **my listings**, **my maintenance requests**, and a **maintenance staff dashboard** (role-gated).
 - **Admin dashboard** (`admin/`): login, dashboard stats, CRUD-style property management (list/add/update), **appointment management**, **pending user listings** (approve/reject), **user management** (suspend/ban/delete, bulk actions), **maintenance request assignment**, **maintenance role promotion/demotion**, **activity logs**, exports.
@@ -308,10 +308,10 @@ All routes guarded by **`adminProtect`**:
 
 ### 10.1 End users
 
-- **Bearer token** stored in frontend `localStorage` under key **`buildestate_token`**.
+- **Bearer token** stored in frontend `localStorage` under key **`buildestate_token`** (legacy identifier in source; same key name today).
 - Axios interceptor attaches `Authorization: Bearer <token>`.
 - On **401**, token is removed (optional redirect to sign-in is commented out).
-- JWT for user login includes a `role` claim; frontend stores user object (`buildestate_user`) and branches UX by role.
+- JWT for user login includes a `role` claim; frontend stores user object under **`buildestate_user`** (legacy identifier) and branches UX by role.
 
 ### 10.1.1 Maintenance staff
 

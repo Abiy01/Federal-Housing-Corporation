@@ -1,8 +1,8 @@
-# BuildEstate Project Detailed Explanation
+# Federal Housing Corporation (FHC) — Project Detailed Explanation
 
 ## 1) Project Overview
 
-BuildEstate is a full-stack real estate platform composed of three apps:
+The FHC platform is a full-stack digital housing system composed of three apps:
 
 - `frontend`: public user-facing website (React + TypeScript + Vite)
 - `admin`: admin dashboard for managing listings/users/appointments (React + Vite)

@@ -1,8 +1,8 @@
-# BuildEstate - Very Detailed Project Description
+# FHC — Very Detailed Project Description
 
 ## 1. Executive Summary
 
-BuildEstate is a full-stack real estate management platform developed as a final-year graduation project.  
+The **Federal Housing Corporation (FHC)** platform is a full-stack housing and property-management system (e.g. capstone or final-year delivery), focused on Ethiopia.  
 It provides:
 
 - a **public client application** for browsing and interacting with property listings,
@@ -22,7 +22,7 @@ In many real estate environments, digital operations are fragmented:
 - Appointment and maintenance flows are weakly integrated.
 - Security and auditing are insufficient in ad-hoc systems.
 
-BuildEstate addresses this by introducing a centralized, role-aware system where users, admins, and maintenance actors operate within one coordinated platform.
+FHC addresses this by introducing a centralized, role-aware system where users, admins, and maintenance actors operate within one coordinated platform.
 
 ---
 
@@ -62,7 +62,7 @@ BuildEstate addresses this by introducing a centralized, role-aware system where
 
 ## 5. High-Level Architecture
 
-BuildEstate follows a client-server architecture with shared backend services:
+The platform follows a client-server architecture with shared backend services:
 
 1. **Frontend (`frontend`)**  
    User-facing SPA built with React + TypeScript + Vite.
@@ -339,6 +339,6 @@ It reflects the transition from theoretical coursework to practical software eng
 
 ## 21. Conclusion
 
-BuildEstate is a complete, multi-role real estate platform that integrates frontend UX, admin operations, backend domain logic, security controls, and cloud deployment readiness.  
+FHC is a complete, multi-role housing platform that integrates frontend UX, admin operations, backend domain logic, security controls, and cloud deployment readiness.  
 It is both a functional software product and a strong final-year engineering artifact, with clear potential for further research and industrial-grade extension.
 

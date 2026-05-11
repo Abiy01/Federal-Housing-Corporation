@@ -1,4 +1,4 @@
-# BuildEstate Defense: Possible Questions and Model Answers
+# FHC Platform Defense: Possible Questions and Model Answers
 
 Use these as practice responses for viva/defense sessions.  
 Keep answers natural; do not memorize word-for-word.
@@ -9,7 +9,7 @@ Keep answers natural; do not memorize word-for-word.
 
 ### 1) What problem does your project solve?
 **Answer:**  
-BuildEstate solves fragmentation in real estate workflows by bringing property discovery, appointment booking, listing moderation, and maintenance operations into one integrated digital platform.
+The FHC platform addresses fragmentation in housing workflows by bringing property discovery, appointment booking, listing moderation, and maintenance operations into one integrated digital system for Ethiopia.
 
 ### 2) Why did you choose this project?
 **Answer:**  
@@ -187,7 +187,7 @@ I would introduce centralized auth service, audit/event pipeline, observability 
 
 ## J) 60-Second Closing Answer (if asked “final summary?”)
 
-BuildEstate is a full-stack real estate platform that solves real workflow problems with practical architecture.  
+FHC is a full-stack platform that solves real workflow problems with practical architecture aligned to federal housing operations.  
 It includes secure authentication, role-based operations, listing and appointment management, and deployable frontend/backend services.  
 The project demonstrates complete software engineering from concept to implementation and deployment, while leaving clear paths for future scalability and test automation.
 

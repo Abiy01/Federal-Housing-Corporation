@@ -1,6 +1,6 @@
-# Frontend (BuildEstate)
+# Frontend (FHC)
 
-User-facing React + TypeScript + Vite application.
+User-facing React + TypeScript + Vite application for **Federal Housing Corporation (FHC)**.
 
 ## Run
 

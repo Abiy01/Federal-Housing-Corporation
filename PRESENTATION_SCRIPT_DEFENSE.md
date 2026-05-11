@@ -1,4 +1,4 @@
-# BuildEstate Defense Presentation Script
+# FHC Defense Presentation Script
 
 Use this script as a speaking guide during your graduation defense.  
 It is written slide-by-slide so you can present confidently in 15-25 minutes.
@@ -8,7 +8,7 @@ It is written slide-by-slide so you can present confidently in 15-25 minutes.
 ## Slide 1: Title
 
 **Slide content:**
-- BuildEstate: Full-Stack Real Estate Management Platform
+- FHC: Full-Stack Federal Housing Digital Platform
 - Student name
 - Department / University
 - Supervisor name
@@ -17,7 +17,7 @@ It is written slide-by-slide so you can present confidently in 15-25 minutes.
 **What to say:**
 
 Good [morning/afternoon], respected examiners, supervisor, and colleagues.  
-My final-year project is **BuildEstate**, a full-stack real estate platform that connects property buyers, renters, owners, and administrators in a single system.  
+My final-year project is the **Federal Housing Corporation (FHC)** digital platform: a full-stack system that connects property buyers, renters, owners, and administrators in a single workflow.  
 This project includes a public frontend, an admin dashboard, and a backend API with secure authentication, property management workflows, appointment scheduling, and maintenance operations.
 
 ---
@@ -278,7 +278,7 @@ In future work, I plan to add deeper automated testing, richer analytics, smarte
 
 **What to say:**
 
-In conclusion, BuildEstate meets the core objectives of this final-year project by delivering a functional and structured full-stack platform.  
+In conclusion, the FHC platform meets the core objectives of this final-year project by delivering a functional and structured full-stack system.  
 It demonstrates applied software engineering concepts in architecture, API design, security, workflow modeling, and deployment readiness.  
 Thank you for your time. I welcome your questions.
 
