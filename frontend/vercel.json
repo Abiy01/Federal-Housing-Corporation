@@ -44,6 +44,7 @@
     }
   ],
   "redirects": [
+    { "source": "/favicon.ico", "destination": "/favicon2.png", "permanent": false },
     { "source": "/home", "destination": "/", "permanent": true },
     { "source": "/properties-listing", "destination": "/properties", "permanent": true },
     { "source": "/login", "destination": "/signin", "permanent": true },
