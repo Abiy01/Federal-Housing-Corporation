@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 
-const heritageImage = 'src/images/about-hero.jpg';
+const heritageImage = '/about-hero.jpg';
 
 const AboutHeritageSection: React.FC = () => {
   return (
