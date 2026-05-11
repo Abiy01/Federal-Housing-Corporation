@@ -2,9 +2,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-const happyHomeowner1 = '/src/images/homeowner1.jpg';
-const happyHomeowner2 = '/src/images/homeowner2.webp';
-const happyHomeowner3 = '/src/images/homeowner3.jpg';
+const happyHomeowner1 = '/homeowner1.jpg';
+const happyHomeowner2 = '/homeowner2.webp';
+const happyHomeowner3 = '/homeowner3.jpg';
 const rightFeatureCard = 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1200&q=80';
 
 const HeroSection: React.FC = () => {

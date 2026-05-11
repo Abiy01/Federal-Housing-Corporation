@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom';
 const CTASection: React.FC = () => {
   return (
     <section className="bg-[#EC4613] py-24 relative overflow-hidden">
-      {/* Background Pattern */}
-        <img 
-          src="/src/images/Abstract architectural texture with light and shadow.png" 
-          alt="Background Texture"
-          className="absolute inset-0 w-full h-full object-cover mix-blend-overlay"
+      {/* Background pattern */}
+        <div
+          className="absolute inset-0 opacity-25 mix-blend-overlay pointer-events-none"
+          aria-hidden
+          style={{
+            backgroundImage:
+              'repeating-linear-gradient(-45deg, transparent, transparent 8px, rgba(255,255,255,0.07) 8px, rgba(255,255,255,0.07) 16px)',
+          }}
         />
         <div className="absolute top-0 left-1/4 w-96"/>
 

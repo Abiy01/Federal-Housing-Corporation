@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const glassPavilion = '/src/images/curated-house3.jpg';
-const skylinePenthouse = '/src/images/curated-house4.png';
-const desertOasis = '/src/images/curated-house1.jpeg';
-const coastalRetreat = '/src/images/curated-house2.webp';
+const glassPavilion = '/curated-house3.jpg';
+const skylinePenthouse = '/curated-house4.png';
+const desertOasis = '/curated-house1.jpeg';
+const coastalRetreat = '/curated-house2.webp';
 
 const CuratedListingsSection: React.FC = () => {
     const propertyImages = [
