@@ -11,8 +11,9 @@ import CTASection from '../components/home/CTASection';
 
 const HomePage: React.FC = () => {
   useSEO({
-    title: 'Premium Real Estate Platform',
-    description: 'BuildEstate offers AI-powered property search, location trends analysis, and investment insights to find your perfect property in India.',
+    title: 'Federal Housing Digital Platform',
+    description:
+      'FHC connects citizens, tenants, and buyers with verified property listings and transparent rental and sale workflows across Ethiopia.',
   });
 
   return (

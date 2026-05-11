@@ -1,7 +1,7 @@
 {
-  "name": "BuildEstate - AI-Powered Real Estate",
-  "short_name": "BuildEstate",
-  "description": "AI-powered luxury real estate platform connecting you with your dream home",
+  "name": "Federal Housing Corporation",
+  "short_name": "FHC",
+  "description": "Verified federal housing listings and digital services for citizens in Ethiopia.",
   "dir": "auto",
   "lang": "en-US",
   "display": "standalone",

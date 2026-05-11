@@ -11,7 +11,8 @@ import AboutCTASection from '../components/about/AboutCTASection';
 const AboutUsPage: React.FC = () => {
   useSEO({
     title: 'About Us',
-    description: 'Learn about BuildEstate — our mission, values, and the AI-powered technology behind luxury real estate in India.',
+    description:
+      'Learn about the Federal Housing Corporation — our mission to modernize public housing services, verified listings, and trusted digital access for Ethiopians.',
   });
 
   return (

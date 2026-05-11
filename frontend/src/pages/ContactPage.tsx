@@ -12,7 +12,8 @@ import NewsletterBanner from '../components/contact/NewsletterBanner';
 const ContactPage: React.FC = () => {
   useSEO({
     title: 'Contact Us',
-    description: 'Get in touch with BuildEstate. We\'re here to help you find your dream property.',
+    description:
+      'Contact FHC for support with listings, appointments, and federal housing services. We respond through official channels.',
   });
 
   return (

@@ -1,7 +1,14 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
-const SITE_URL = 'https://buildestate.vercel.app';
+const DEFAULT_SITE_URL = 'https://federal-housing-corporation.vercel.app';
+
+function getSiteBaseUrl(): string {
+  const fromEnv = (import.meta.env.VITE_SITE_URL as string | undefined)?.trim().replace(/\/$/, '');
+  if (fromEnv) return fromEnv;
+  if (typeof window !== 'undefined') return window.location.origin;
+  return DEFAULT_SITE_URL;
+}
 
 interface StructuredDataProps {
   type: 'website' | 'organization' | 'property';
@@ -21,27 +28,31 @@ interface StructuredDataProps {
 
 const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
   const location = useLocation();
-  const currentUrl = `${SITE_URL}${location.pathname}`;
+  const siteUrl = getSiteBaseUrl();
+  const currentUrl = `${siteUrl}${location.pathname}`;
 
   const schemas: Record<string, object> = {
     website: {
       '@context': 'https://schema.org',
       '@type': 'WebSite',
-      name: 'BuildEstate',
-      url: SITE_URL,
-      description: 'AI-powered luxury real estate platform for finding your perfect property in India.',
+      name: 'Federal Housing Corporation',
+      alternateName: 'FHC',
+      url: siteUrl,
+      description:
+        'Official digital platform for verified federal housing listings, rentals, and citizen-facing property services in Ethiopia.',
       potentialAction: {
         '@type': 'SearchAction',
-        target: `${SITE_URL}/properties?q={search_term_string}`,
+        target: `${siteUrl}/properties?q={search_term_string}`,
         'query-input': 'required name=search_term_string',
       },
     },
     organization: {
       '@context': 'https://schema.org',
       '@type': 'Organization',
-      name: 'BuildEstate',
-      url: SITE_URL,
-      logo: `${SITE_URL}/logo.png`,
+      name: 'Federal Housing Corporation',
+      alternateName: 'FHC',
+      url: siteUrl,
+      logo: `${siteUrl}/logo.png`,
       sameAs: [
         'https://github.com/AAYUSH412/Real-Estate-Website',
         'https://linkedin.com/in/AAYUSH412',
@@ -49,7 +60,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
       contactPoint: {
         '@type': 'ContactPoint',
         contactType: 'customer service',
-        availableLanguage: ['English', 'Hindi'],
+        availableLanguage: ['English', 'Amharic'],
       },
     },
     property: {
@@ -59,7 +70,7 @@ const StructuredData: React.FC<StructuredDataProps> = ({ type, data }) => {
       description: data?.description || 'Property details',
       url: currentUrl,
       datePosted: data?.createdAt || new Date().toISOString(),
-      image: data?.image || `${SITE_URL}/og-image.png`,
+      image: data?.image || `${siteUrl}/og-image.png`,
       address: {
         '@type': 'PostalAddress',
         addressLocality: data?.location || 'City',
